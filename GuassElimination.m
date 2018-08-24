@@ -37,7 +37,7 @@ else
         for j = N:-1:i
             sum =sum + A(i,j)*x(j);
         end
-        x(i) = (b(i) - sum)/A(i,j);
+        x(i) = (b(i) - sum)/A(i,i);
     end
 end
         
