@@ -38,7 +38,7 @@ else
         for j = N:-1:i
             sum = sum + L(i,j)*y(j);
         end
-        y(i) = (b(i) - sum)/L(i,j);
+        y(i) = (b(i) - sum)/L(i,i);
     end    
     y
     x = zeros(N,1);
@@ -47,7 +47,7 @@ else
         for j = N:-1:i
             sum = sum +U(i,j)*x(j);
         end
-        x(i) = (b(i) - sum)/U(i,j);
+        x(i) = (b(i) - sum)/U(i,i);
     end
 end
         
